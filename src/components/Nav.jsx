@@ -9,7 +9,7 @@ export default function Nav() {
 
   return (
     <nav className="bg-white flex items-center justify-between py-5 fixed top-0 w-screen">
-      <h1 className="ml-7 text-green text-3xl font-bold lg:ml-11 xl:ml-20">bonsai</h1>
+      <h1 className="ml-7 text-green-100 text-3xl font-bold lg:ml-11 xl:ml-20">bonsai</h1>
       <div className={
         `w-full bg-white fixed bottom-0 top-17 flex flex-col px-5 mr-7 ${showMenu ? "left-0 duration-300" : "left-full duration-300"
         } md:duration-0 md:flex md:static md:w-max md:flex-row md:grow md:justify-between lg:mr-11 xl:mr-20`
@@ -33,11 +33,11 @@ export default function Nav() {
           </li>
         </ul>
         <div className="flex gap-5 flex-col md:flex-row font-bold">
-          <button className="border border-green text-green py-2 px-5 rounded">LOG IN</button>
-          <button className="bg-green text-white py-2 px-5 rounded">START FREE</button>
+          <button className="border border-green-100 text-green-100 py-2 px-5 rounded">LOG IN</button>
+          <button className="bg-green-100 text-white py-2 px-5 rounded">START FREE</button>
         </div>
       </div>
-      <GiHamburgerMenu className="mr-12 cursor-pointer text-3xl text-green md:hidden" onClick={menuToggle} />
+      <GiHamburgerMenu className="mr-12 cursor-pointer text-3xl text-green-100 md:hidden" onClick={menuToggle} />
     </nav>
   )
 }
